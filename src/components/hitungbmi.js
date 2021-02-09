@@ -1,5 +1,5 @@
 import React from "react"
-//import Alert from "./Alert"
+import Alert from "./Alert"
 
 class Main extends React.Component {
     //constructor
@@ -41,7 +41,8 @@ class Main extends React.Component {
         //masukan status dan result ke dalam state
         this.setState({
             hasil: result,
-            status: status
+            status: status,
+            type: type
         })
     }
 
@@ -68,10 +69,10 @@ class Main extends React.Component {
                             Nilai BMI
                             <input type="number" className="form-control mb-1" value = { this.state.hasil } readOnly />
 
-                            status BMI
-                            <input type="text" className="form-control mb-1" value = { this.state.status } readOnly />
+                            Status BMI
+                           <Alert message={this.state.status} type={this.state.type}/>
                             
-                        </div>    
+                    </div>    
                 </div>
             </div>
         )

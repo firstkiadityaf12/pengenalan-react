@@ -7,6 +7,7 @@ import BMI from "./components/hitungbmi"
 import Cicilan from "./components/cicilan"
 import Harga from "./components/hargakhir"
 import Konversi from "./components/konversidecimal"
+import Decimal from "./components/decimal"
 
 class App extends Component{
   render(){
@@ -16,7 +17,8 @@ class App extends Component{
           <BMI/>
           <Cicilan/>
           <Harga/>
-
+          <Konversi/>
+          <Decimal />
         </div>  
       </div>
     );
